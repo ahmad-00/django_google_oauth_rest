@@ -44,7 +44,7 @@ authentication flow.
 * VALIDATE_STATE: (OPTIONAL) state is a server side generated security feature suggested by google. It will be saved in
   session. default value it True. If set to False it will bypass this security check.
 * SET_REGISTER_USER_FIELD: (OPTIONAL) If you want to set some value in User table after login/register process is
-  successful, you can set it here. In example below, we set user verified field to True is process is successful:
+  successful, you can set it here. In example below, we set user verified field to True when login/register process is successful::
     ```
   SET_REGISTER_USER_FIELD = {
       "verified": True
