@@ -35,18 +35,18 @@ business logic and current authentication flow.
 5. Create a new view which is a subclass of ‘**AuthCallback**’ like
    this:
    
-   .. code-block:: python
-   
-      class CallbackView(AuthCallback):
-        def get(self, request):
-          user = super(CallbackView, self).get(request)         
-          # create new token and authenticate user. Return token and required parameters here``
+.. code-block:: python
+
+   class CallbackView(AuthCallback):
+      def get(self, request):
+         user = super(CallbackView, self).get(request)         
+         # create new token and authenticate user. Return token and required parameters here``
 
 6. Add another new url to your projects url.py like this:
 
-  .. code-block:: python
-  
-     re_path('auth/calback', views.CallbackView.as_view(), name="auth_calback_url")
+.. code-block:: python
+
+   re_path('auth/calback', views.CallbackView.as_view(), name="auth_calback_url")
 
 **Configuration parameter**
 ---------------------------
