@@ -49,7 +49,7 @@ business logic and current authentication flow.
      re_path('auth/calback', views.CallbackView.as_view(), name="auth_calback_url")
 
 **Configuration parameter**
----------------
+---------------------------
 
 -  AUTH_USER_MODEL: Authentication user table in your models
 -  CLIENT_ID: Retrieved from Google console
@@ -74,7 +74,7 @@ business logic and current authentication flow.
    fine with default value.
 
 **URLs Flow**
----------------
+--------------
 
 1. First call ‘auth/url’ by POST(Empty body) or GET Method.
 
